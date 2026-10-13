@@ -12,6 +12,7 @@ import 'package:fashion_ecommerce/features/home/presentation/page/main_screen.da
 import 'package:fashion_ecommerce/features/onboading/page/onboarding_screen.dart';
 import 'package:fashion_ecommerce/features/onboading/page/splash_screen.dart';
 import 'package:fashion_ecommerce/features/order/presentation/page/order_history_screen.dart';
+import 'package:fashion_ecommerce/features/payment/presentation/page/payment_screen.dart';
 import 'package:fashion_ecommerce/features/product/presentation/page/product_detail_screen.dart';
 import 'package:fashion_ecommerce/features/profile/presentation/page/profile_screen.dart';
 import 'package:fashion_ecommerce/features/search/presentation/page/search_screen.dart';
@@ -85,6 +86,11 @@ class AppRouter {
         path: AppRoutes.orderHistory,
         name: RouterNames.orderHistory,
         builder: (context, state) => OrderHistoryScreen(),
+      ),
+      GoRoute(
+        path: AppRoutes.payment,
+        name: RouterNames.payment,
+        builder: (context, state) => PaymentScreen(),
       ),
       GoRoute(
         path: AppRoutes.favorite,
